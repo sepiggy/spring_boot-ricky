@@ -1,20 +1,14 @@
 package cn.sepiggy.aop;
 
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@Data
 public class SmartBoss {
-    private BookingService bookingService;
-
     @Autowired
-    public void setBookingService(BookingService bookingService) {
-        this.bookingService = bookingService;
-    }
-
-    public BookingService getBookingService() {
-        return bookingService;
-    }
+    private BookingService bookingService;
 
     public void goSomewhere() {
         bookingService.bookFlight();

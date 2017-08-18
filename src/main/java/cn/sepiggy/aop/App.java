@@ -2,8 +2,10 @@ package cn.sepiggy.aop;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @ComponentScan
+@EnableAspectJAutoProxy
 public class App {
     public static void main(String[] args) {
 //        bossGoSomewhere();
