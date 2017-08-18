@@ -16,9 +16,12 @@ public class ReturnHtmlController {
         return "<html><head><title>Title</title></head><body><h1>This is a Post</h1><p>This is content of the post.</p></body></html>";
     }
 
+    @RequestMapping("/posts")
+    public String post() {
+        return "post";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(ReturnHtmlController.class, args);
     }
-
-
 }
