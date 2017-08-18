@@ -1,4 +1,4 @@
-package cn.sepiggy.ioc;
+package cn.sepiggy.aop;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

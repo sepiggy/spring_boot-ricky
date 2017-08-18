@@ -1,4 +1,4 @@
-package cn.sepiggy.springboot.ioc;
+package cn.sepiggy.ioc;
 
 public class CtripBookingService implements BookingService {
   @Override
