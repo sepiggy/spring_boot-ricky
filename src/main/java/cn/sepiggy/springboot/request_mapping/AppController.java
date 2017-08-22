@@ -1,4 +1,4 @@
-package cn.sepiggy.springboot.requestmapping;
+package cn.sepiggy.springboot.request_mapping;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

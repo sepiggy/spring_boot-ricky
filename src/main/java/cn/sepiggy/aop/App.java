@@ -1,18 +1,19 @@
-package cn.sepiggy.ioc;
+package cn.sepiggy.aop;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @ComponentScan
+@EnableAspectJAutoProxy
 public class App {
     public static void main(String[] args) {
-//        bossGoSomewhere();
-        smartBossGoSomewhere();
+        bossGoSomewhere();
     }
 
     static void bossGoSomewhere() {
-        Boss boss = new Boss();
-        boss.goSomeWhere();
+        cn.sepiggy.aop.Boss boss = new cn.sepiggy.aop.Boss();
+        boss.goSomewhere();
     }
 
     static void smartBossGoSomewhere() {
@@ -21,3 +22,4 @@ public class App {
         boss.goSomewhere();
     }
 }
+

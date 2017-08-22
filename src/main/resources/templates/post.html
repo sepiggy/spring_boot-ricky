@@ -1,9 +1,6 @@
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<h1>This is title</h1>
-<p> This is Content</p>
-</body>
-</html>
+<!DOCTYPE html>
+<div class="blog-post" xmlns:th="http://www.w3.org/1999/xhtml">
+    <h3 class="blog-post-title"><a href="#" th:text="${post.title}"></a></h3>
+    <p class="blog-post-meta" th:text="${#dates.format(post.created, 'yyyy-MM-dd')}"></p>
+    <p class="blog-post-content" th:text="${post.content}"></p>
+</div>

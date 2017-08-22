@@ -1,13 +1,15 @@
-package cn.sepiggy.ioc;
+package cn.sepiggy.aop;
 
+import cn.sepiggy.ioc.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SmartBoss {
-    private BookingService bookingService;
 
     @Autowired
+    private BookingService bookingService;
+
     public void setBookingService(BookingService bookingService) {
         this.bookingService = bookingService;
     }
@@ -20,3 +22,4 @@ public class SmartBoss {
         bookingService.bookFlight();
     }
 }
+

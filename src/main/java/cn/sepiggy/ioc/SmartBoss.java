@@ -1,4 +1,4 @@
-package cn.sepiggy.springboot.ioc;
+package cn.sepiggy.ioc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

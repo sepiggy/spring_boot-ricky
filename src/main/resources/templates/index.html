@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<div class="blog-post">
-    <h3 class="blog-post-title"><a href="#" th:text="${title}"></a></h3>
-    <p class="blog-post-meta" th:text="${created}"></p>
-    <p class="blog-post-content" th:text="${content}"></p>
+<div class="container" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="post" th:each="post : ${posts}">
+        <div class="page-header">
+            <h3><a href="#" th:href="@{'/posts/'+${post.id}}" th:text="${post.title}"></a></h3>
+            <small class="text-muted" th:text="${post.created}"></small>
+        </div>
+        <div class="post-content" th:text="${post.content}"></div>
+    </div>
 </div>
